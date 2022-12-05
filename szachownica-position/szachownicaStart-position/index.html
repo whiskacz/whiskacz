@@ -18,11 +18,41 @@ Tekst ma być pod szachownicą. Wykorzystaj do tego właściwości position rela
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Szachownica Position Absolute</title>
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .board{
+            margin: 10vw calc((100vw - 50vw)/2);
             width: 50%;
             height: 50vw;
             background-color: red;
-
+            border: 10px solid black;
+            position: relative;
+        }
+        span:nth-child(1){
+            position: absolute;
+            width:50%;
+            height:50%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+        }
+        span:nth-child(4){
+            position: absolute;
+            width:50%;
+            height:50%;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
         }
     </style>
 </head>
